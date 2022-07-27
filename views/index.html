@@ -22,7 +22,7 @@
 
     <!-- Calculator Start -->
 
-    <table> 
+    <table class="text-center d-flex justify-content-center"> 
         <tr > 
             <td colspan="4">
                 <input type="text" id="result">
@@ -32,18 +32,82 @@
         <tr>
             <!-- Top Row -->
             <td>
-                <button type="button" class="btn btn-dark" onclick="">C</button>
+                <button type="button" class="btn btn-dark" onclick="clearResult()">C</button>
             </td>
             <td>
-                <button type="button" class="btn btn-dark" onclick="">C</button>
+                <button type="button" class="btn btn-dark" onclick="plusMinus()">+ / -</button>
             </td>
             <td>
-                <button type="button" class="btn btn-dark" onclick="">C</button>
+                <button type="button" class="btn btn-dark" onclick="percentage()">%</button>
             </td>
             <td>
-                <button type="button" class="btn btn-dark" onclick="">C</button>
+                <button type="button" class="btn btn-dark" onclick="buttonNumber('/')">/</button>
             </td>
 
+        </tr>
+
+        <tr>
+            <!-- 2nd Row -->
+            <td>
+                <button type="button" class="btn btn-dark" onclick="buttonNumber('7')">7</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-dark" onclick="buttonNumber('8')">8</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-dark" onclick="buttonNumber('9')">9</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-dark" onclick="buttonNumber('*')">*</button>
+            </td>
+
+        </tr>
+
+        <tr>
+            <!-- 3rd Row -->
+            <td>
+                <button type="button" class="btn btn-dark" onclick="buttonNumber('4')">4</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-dark" onclick="buttonNumber('5')">5</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-dark" onclick="buttonNumber('6')">6</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-dark" onclick="buttonNumber('-')">-</button>
+            </td>
+
+        </tr>
+
+        <tr>
+            <!-- 4th Row -->
+            <td>
+                <button type="button" class="btn btn-dark" onclick="buttonNumber('1')">1</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-dark" onclick="buttonNumber('2')">2</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-dark" onclick="buttonNumber('3')">3</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-dark" onclick="buttonNumber('+')">+</button>
+            </td>
+
+        </tr>
+
+        <tr>
+            <!-- Bottom Row -->
+            <td colspan="2">
+                <button type="button" class="btn btn-dark btn0" onclick="buttonNumber('0')">0</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-dark" onclick="buttonNumber('.')">.</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-dark" onclick="calculateResult()">=</button>
+            </td>
 
         </tr>
 
